@@ -1,0 +1,205 @@
+/* Loads custom fonts from fonts/ folder */
+@font-face{
+    font-family: 'KellySlab';
+    src: url('../fonts/KellySlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Block, isometric font for logo */
+@font-face{
+    font-family: 'Nabla';
+    src: url('../fonts/Nabla-Regular-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(17, 17, 17);
+    color: #ffc800;
+    font-family: sans-serif, Arial, Helvetica;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6rem;
+    background-color: #4e0064;
+}
+.logo a{
+    text-decoration: none;
+    color: #ffc800;
+    font-family: 'Nabla', 'Courier New', monospace;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+.navbar ul{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 3rem;      
+    list-style: none;       
+}
+.navbar ul a{
+    padding: 1.15rem;    
+    color: #ffc800;
+    text-decoration: none;            
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 1.4rem;
+    text-shadow: none;
+}
+.navbar ul a:hover{
+    color: #ff8a04;
+    text-decoration:underline;
+    text-shadow: 10px 10px 1 #00ffd5;
+}
+
+.page-container{
+    min-height: 70vh;
+}
+.setup{
+    font-family: 'KellySlab', mono, consolas;
+    font-size: 7rem;
+    text-align: center;
+}
+.punchline{
+    font-family: 'KellySlab', mono, consolas;
+    font-size: 6rem;
+    text-align: center;
+    color: #ff8a04;
+    line-height: 1.5rem;
+}
+
+.card-container-border{
+    font-size: 1.25rem;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-width: .15rem;
+    border-color: rgba(255, 179, 0, 0.388);
+    border-style: solid;
+}
+.card-heading-text{
+    color: #ff8a04;
+    font-family: 'KellySlab', mono, consolas;
+    font-size: 2.25rem;
+    line-height: 4rem;
+    text-align: center;
+    max-width: 25rem;
+    flex: 1 1 auto; /* stays the same ratio, doesnt shrink/grow */
+    margin: 2rem;
+    padding-right: 3rem;   
+    padding-left: 3rem;   
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.card-item-extend{
+    background-color: #4e00644d;
+    border-radius: 1rem;
+    max-width: 70rem;
+    padding: 3rem;
+    flex: auto; /* extends towards the right (limit as defined by parent)  */
+    color: #ffc800;
+}
+.card-container{
+    font-size: 1.25rem;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-item{
+    background-color: #4e00644d;
+    border-radius: 1rem;
+    padding: 3rem;
+    max-width: 50rem;
+    color: #ffc800;
+}
+.card-item h2{
+    font-size: 3rem;
+    color: #ff8a04;
+    font-family: mono, consolas;
+    min-width: 20rem;
+}
+.card-item h3{
+    font-family: 'Nabla', mono, consolas;
+    color: #ffc800;
+    font-size: 2rem;
+}
+.card-item p{
+    color: #ffc800;
+}
+.card-item a{
+    font-family: mono, consolas;
+    color: #ff8a04;
+    padding-left: 1rem;
+}
+.card-item-image{
+    padding: 3rem;
+}
+
+.floating-quote{
+    border-radius: 0%;
+    padding: 1rem;
+    background-color: #ff8a042e;
+    line-height: 0rem;
+    font-family: mono, consolas;
+    font-size: 1.35rem;
+    text-align: center;
+}
+/* card wrapper for images with float */
+.card-wrapper{
+    display: flow-root;
+    max-width: 55rem;
+    width: 100%;
+    margin: 3rem auto 2rem auto;
+}
+.card-wrapper img{
+    border-radius: 2rem;
+    border:#ff6f00a9;
+    padding: .2rem;
+    border-width: .2rem;
+    border-style: dashed;
+}
+.card-image-left{
+    float: left;
+    margin-right: 1rem;
+}
+.card-image-right{
+    float: right;
+    margin-left: 1rem;
+}
+.card-text-wrap{
+    margin: 2rem;
+    font-size: 1.1rem;
+    font-family: mono, consolas;
+    overflow: hidden;
+    display: inline-block;
+}
+/* headings */
+.main-heading{
+    color: #ff8a04;
+    font-family: 'KellySlab', mono, consolas;
+    font-size: 4rem;
+    margin: 8rem;
+    text-align: center;
+}
+.mini-heading{
+    color: #ff8a04;
+    font-family: 'KellySlab', mono, consolas;
+    font-size: 1.75rem;
+    text-align: center;
+    line-height:2rem;
+}
+footer{
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'KellySlab', mono, consolas;
+    color: #ff8a04;
+}
